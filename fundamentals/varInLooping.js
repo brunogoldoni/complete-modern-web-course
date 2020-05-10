@@ -6,4 +6,5 @@ for (var i = 0; i < 10; i++) {
   });
 }
 
-console.log("i =", i);
+funcs[2]();
+funcs[8]();
