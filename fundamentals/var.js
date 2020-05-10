@@ -1,19 +1,6 @@
+var number = 1;
 {
-  {
-    {
-      {
-        var now = "Now";
-        console.log(now);
-      }
-    }
-  }
+  var number = 2;
+  console.log("Inside =", number);
 }
-console.log(now);
-
-function test() {
-  var local = 123;
-  console.log(local);
-}
-
-test();
-console.log(local);
+console.log("Out", number);
