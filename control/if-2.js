@@ -6,7 +6,7 @@ function test1(num) {
 // test1(8);
 
 function teste2(num) {
-  if (num > 7);
+  if (num > 7); //don't use " ; " with control structure
   {
     console.log(num);
   }
