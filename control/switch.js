@@ -32,3 +32,5 @@ printRes(10);
 printRes(7);
 printRes(5);
 printRes(1.22);
+printRes(-1);
+printRes(11);
