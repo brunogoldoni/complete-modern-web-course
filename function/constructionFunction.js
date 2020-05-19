@@ -19,7 +19,7 @@ fusca.speedUp();
 console.log(fusca.getActualSpeed());
 
 const ferrari = new Car(350, 20);
-ferrari.speedUp;
+ferrari.speedUp();
 console.log(ferrari.getActualSpeed());
 
 console.log(typeof Car);
