@@ -1,7 +1,7 @@
 //CÓDIGO NÃO EXECUTÁVEL!!!
 
 // Procedural
-procesamento(valor1, valor2, valor3);
+processing(valor1, valor2, valor3);
 
 // OO
 object = {
