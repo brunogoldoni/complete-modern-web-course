@@ -1,6 +1,6 @@
 const people = {
-  name: "Cleiton",
-  age: 33,
+  name: "Bruno",
+  age: 31,
   weight: 90,
 };
 
@@ -9,7 +9,7 @@ console.log(Object.values(people));
 console.log(Object.entries(people));
 
 // Object.entries(people).forEach((e) => {
-//   console.log(`${e[0]}: ${[1]}`);
+//   console.log(`${e[0]}: ${e[1]}`);
 // });
 
 Object.entries(people).forEach(([key, value]) => {
@@ -26,7 +26,7 @@ people.dateOfBirth = "01/01/2021";
 console.log(people.dateOfBirth);
 console.log(Object.keys(people));
 
-// Object.assign (ECMAScript 2015)
+//Object.assign (ECMAScript 2015)
 const destiny = { a: 1 };
 const object1 = { b: 2 };
 const object2 = { c: 3, a: 4 };
