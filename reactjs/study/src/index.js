@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import First from "./components/first";
+import GoodMorning from "./components/GoodMorning";
 
-ReactDOM.render(<First />, document.getElementById("root"));
+ReactDOM.render(<GoodMorning name="Bruno" />, document.getElementById("root"));
