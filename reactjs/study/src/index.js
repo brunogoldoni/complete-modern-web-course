@@ -1,6 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import GoodMorning from "./components/GoodMorning";
+import { GoodAfternoon, GoodEvening } from "./components/Multiples";
 
-ReactDOM.render(<GoodMorning name="Bruno" />, document.getElementById("root"));
+ReactDOM.render(
+  <div>
+    <GoodAfternoon name="Bruno" />
+    <GoodEvening name="Karina" />
+  </div>,
+  document.getElementById("root")
+);
