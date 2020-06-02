@@ -6,6 +6,13 @@ export default class Congratulation extends Component {
     name: this.props.name,
   };
 
+  constructor(props) {
+    super(props);
+
+    this.setType = this.setType.bind(this);
+    this.setName = this.setName.bind(this);
+  }
+
   setType(e) {
     this.setState({ type: e.target.value });
   }
@@ -27,13 +34,13 @@ export default class Congratulation extends Component {
           type="text"
           placeholder="Tipo"
           value={type}
-          onChange={(e) => this.setType(e)}
+          onChange={this.setType}
         />
         <input
           type="text"
           placeholder="Nome"
           value={name}
-          onChange={(e) => this.setName(e)}
+          onChange={this.setName}
         />
       </div>
     );
