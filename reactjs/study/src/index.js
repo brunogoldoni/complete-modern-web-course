@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import Congratulation from "./components/Congratulation";
+import Father from "./components/Father";
 
 ReactDOM.render(
   <div>
-    <Congratulation type="Bom dia" name="Bruno" />
+    <Father name="Carlos" lastName="Goldoni" />
   </div>,
   document.getElementById("root")
 );
