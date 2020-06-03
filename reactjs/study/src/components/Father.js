@@ -1,6 +1,6 @@
 import React from "react";
 
-import Child from "./Child";
+import { childrenWithProps } from "../utils/utils";
 
 export default (props) => {
   return (
@@ -9,11 +9,7 @@ export default (props) => {
         {props.name} {props.lastName}
       </h1>
       <h2>Filhos</h2>
-      <ul>
-        <Child name="Bruno" lastName={props.lastName} />
-        <Child {...props} />
-        <Child {...props} name="Robertson" />
-      </ul>
+      <ul>{childrenWithProps(props)}</ul>
     </div>
   );
 };
