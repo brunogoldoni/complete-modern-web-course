@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise HTML</title>
+  </head>
+  <body>
+    <header>Exercise HTML</header>
+    <br />
+
+    <nav>
+      <a href="exercise/test.html">00 - Test</a>
+    </nav>
+
+    <section id="content"></section>
+
+    <footer>
+      <br />
+      Course of modern web
+    </footer>
+
+    <script>
+      document.querySelectorAll("a").forEach((link) => {
+        const content = document.getElementById("content");
+
+        link.onclick = function (e) {
+          e.preventDefault();
+          fetch(link.href)
+            .then((resp) => resp.text())
+            .then((html) => (content.innerHTML = html));
+        };
+      });
+    </script>
+  </body>
+</html>
