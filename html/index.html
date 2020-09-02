@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exercise HTML</title>
+    <style>
+      #content {
+        padding: 30px 0px;
+      }
+    </style>
   </head>
   <body>
     <header>Exercise HTML</header>
@@ -11,14 +16,15 @@
 
     <nav>
       <a href wm-nav="exercise/test.html">00 - Test</a>
+      |
+      <a href wm-nav="exercise/text1.html">01 - Text 01</a>
+      |
+      <a href wm-nav="exercise/text2.html">01 - Text 02</a>
     </nav>
 
     <section id="content"></section>
 
-    <footer>
-      <br />
-      Course of modern web
-    </footer>
+    <footer>Course of modern web</footer>
 
     <script>
       document.querySelectorAll("[wm-nav").forEach((link) => {
