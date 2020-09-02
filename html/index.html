@@ -10,7 +10,7 @@
     <br />
 
     <nav>
-      <a href="exercise/test.html">00 - Test</a>
+      <a href wm-nav="exercise/test.html">00 - Test</a>
     </nav>
 
     <section id="content"></section>
@@ -21,12 +21,12 @@
     </footer>
 
     <script>
-      document.querySelectorAll("a").forEach((link) => {
+      document.querySelectorAll("[wm-nav").forEach((link) => {
         const content = document.getElementById("content");
 
         link.onclick = function (e) {
           e.preventDefault();
-          fetch(link.href)
+          fetch(link.getAttribute("wm-nav"))
             .then((resp) => resp.text())
             .then((html) => (content.innerHTML = html));
         };
